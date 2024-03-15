@@ -1,0 +1,54 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">emp Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Gender</th>
+            <th scope="col">DOB</th>
+            <th scope="col">email</th>
+            <th scope="col">phone</th>
+            <th scope="col">Address</th>
+            <th scope="col">NationalId</th>
+            <th scope="col">marital Status</th>
+            <th scope="col">ECN</th>
+            <th scope="col">ENP</th>
+            <th scope="col">Department Name</th>
+            <th scope="col">position</th>
+            <th scope="col">Skill Set</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Salary</th>
+            <th scope="col">emp status</th>
+            <th scope="col">Bank Acc No</th>
+            <th scope="col">manager</th>
+            <th scope="col">Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employee">
+            <td>{{emp.EmployeeID}}</td>
+            <td>{{emp.firstName}}</td>
+            <td>{{emp.lastName}}</td>
+            <td>{{emp.gender}}</td>
+            <td>{{emp.dateOfBirth}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.phone}}</td>
+            <td>{{emp.address}}</td>
+            <td>{{emp.nationalId}}</td>
+            <td>{{emp.MaritalStatus}}</td>
+            <td>{{emp.emergencyContactName}}</td>
+            <td>{{emp.emergencyContactPhone}}</td>
+            <td>{{emp.department?.departmentName}}</td>
+            <td>{{emp.position}}</td>
+            <td>{{emp.skillSet}}</td>
+            <td>{{emp.employmentStartDate}}</td>
+            <td>{{emp.employmentEndDate}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.employmentStatus}}</td>
+            <td>{{emp.bankAccNumber}}</td>
+            <td>{{emp.manager?.firstName}}</td>
+            <td>{{emp.role?.roleName}}</td>
+        </tr>
+    </tbody>
+</table>
